@@ -8,7 +8,8 @@
 import MANIFEST from "../ultrastable.json" with { type: "json" };
 
 export const ID = MANIFEST.identity;
-export const SITE = ID.public_url || ID.planned_url;
+// public_url is null until the platform deploys this Worker; the address it will take is then used for canonical links and the manifest.
+export const SITE = ID.public_url || "https://open-questions.ultrastable.org";
 export const BEAT_HOURS = 168;
 
 export const SPEC = {
