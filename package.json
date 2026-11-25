@@ -1,0 +1,9 @@
+{
+  "name": "open-questions",
+  "private": true,
+  "type": "module",
+  "description": "What science honestly does not know yet: the big open questions, where the evidence leans today, and how that lean has moved.",
+  "scripts": {
+    "test": "node --test --no-warnings worker/*.test.mjs"
+  }
+}
