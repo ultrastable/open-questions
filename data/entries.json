@@ -1,1 +1,16 @@
-[]
+[
+ {
+  "id": "long-term-effects-of-social-media-on-adolescent-mental-healt",
+  "title": "long-term effects of social media on adolescent mental health",
+  "lean": "no significant association",
+  "summary": "In unadjusted models, social media use at age 15/16 was positively associated with anxiety and depression five years later, but these associations were no longer significant after adjusting for confounders.",
+  "sources": [
+   {
+    "title": "Long-term consequences of adolescent social media use on mental health in young adulthood",
+    "year": 2025,
+    "doi": "10.1093/eurpub/ckaf161.526"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
+ }
+]
