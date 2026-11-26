@@ -54,5 +54,19 @@
    }
   ],
   "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "universal-basic-income-labour-supply",
+  "title": "universal basic income labour supply",
+  "lean": "no evidence of a significant reduction",
+  "summary": "We found a total of 50 empirical cases, of which 18 were selected, and 38 studies with contrasted empirical evidence on this relationship. The results speak for themselves: Despite a detailed search, we have not found any evidence of a significant reduction in labour supply.",
+  "sources": [
+   {
+    "title": "Is There Empirical Evidence on How the Implementation of a Universal Basic Income (UBI) Affects Labour Supply? A Systematic Review",
+    "year": 2020,
+    "doi": "10.3390/su12229459"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
  }
 ]
