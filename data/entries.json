@@ -12,5 +12,19 @@
    }
   ],
   "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "microplastics-human-health-effects",
+  "title": "microplastics human health effects",
+  "lean": "equivocal",
+  "summary": "Much evidence is equivocal and further research is necessary.",
+  "sources": [
+   {
+    "title": "Indoor Airborne Microplastics: Human Health Importance and Effects of Air Filtration and Turbulence",
+    "year": 2024,
+    "doi": "10.3390/microplastics3040040"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
  }
 ]
