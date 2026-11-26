@@ -30,12 +30,14 @@ async function chat(prompt) {
   const routes = [
     { name: "github-models", url: "https://models.github.ai/inference/chat/completions", key: TOKEN, model: MODEL },
     { name: "github-models-org", url: "https://models.github.ai/orgs/" + REPO.split("/")[0] + "/inference/chat/completions", key: TOKEN, model: MODEL },
+    // Keyless free route: Pollinations serves an OpenAI-shaped endpoint with no account. Its answers pass the same verify gate.
+    { name: "pollinations", url: "https://text.pollinations.ai/openai", key: "none", model: "openai" },
     { name: "huggingface", url: "https://router.huggingface.co/v1/chat/completions", key: process.env.HF_TOKEN || "", model: process.env.HF_MODEL || "meta-llama/Llama-3.1-8B-Instruct" },
   ];
   let last = "";
   for (const r0 of routes) {
     if (!r0.key) { say("route", r0.name, "skipped: no token"); continue; }
-    const r = await fetch(r0.url, { method: "POST", headers: { authorization: "Bearer " + r0.key, "content-type": "application/json", accept: "application/vnd.github+json", "x-github-api-version": "2022-11-28", "user-agent": UA },
+    const r = await fetch(r0.url, { method: "POST", headers: { ...(r0.key === "none" ? {} : { authorization: "Bearer " + r0.key }), "content-type": "application/json", accept: "application/vnd.github+json", "x-github-api-version": "2022-11-28", "user-agent": UA },
       body: JSON.stringify({ model: r0.model, temperature: 0, max_tokens: 400, messages: [{ role: "system", content: "You extract facts from study abstracts. Reply with one JSON object and nothing else." }, { role: "user", content: prompt }] }) });
     say("route", r0.name, r.status, ["x-ratelimit-remaining-requests", "x-ratelimit-remaining-tokens"].map(h => h + "=" + r.headers.get(h)).join(" "));
     if (!r.ok) { last = r0.name + " " + r.status + ": " + (await r.text()).slice(0, 160); continue; }
