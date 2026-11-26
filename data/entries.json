@@ -68,5 +68,33 @@
    }
   ],
   "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "why-we-sleep-function-of-sleep",
+  "title": "why we sleep function of sleep",
+  "lean": "",
+  "summary": "The question of “why do we sleep?” has been occupying scientists for some time and a clear answer has yet to be accepted by all.",
+  "sources": [
+   {
+    "title": "Why Do We Sleep? Human Sleep: Neurobiology and Function",
+    "year": 2011,
+    "doi": "10.2174/978160805267711101010003"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "hubble-tension-expansion-rate",
+  "title": "Hubble tension expansion rate",
+  "lean": "",
+  "summary": "We conclude that the tension is unlikely to be resolved by any single known systematic",
+  "sources": [
+   {
+    "title": "The Hubble Tension: A Review of Early- and Late-Universe Determinations of the Cosmic Expansion Rate and Proposed Theoretical Resolutions",
+    "year": 2026,
+    "doi": "10.34257/gjsfra259211"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
  }
 ]
