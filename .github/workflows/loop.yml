@@ -46,6 +46,16 @@ jobs:
           git push
       - name: Build the site from the router
         run: node github/build.mjs
+      - name: Publish the site to gh-pages (PAGES-NO-CLICK-1, a second route when Pages cannot be switched on by API)
+        run: |
+          set -e
+          cd _site; touch .nojekyll
+          git init -q -b gh-pages; git config user.name "${{ github.event.repository.name }}-loop"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A; git commit -qm "chore(site): publish build ${{ github.sha }}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" gh-pages
+          code=$(curl -s -o /dev/null -w '%{http_code}' -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages" -d '{"source":{"branch":"gh-pages","path":"/"}}')
+          echo "Pages enable from gh-pages answered HTTP $code (201 on, 409 already on, 403/404 refused: the Cloudflare copy serves the site meanwhile)"
       - id: pages
         uses: actions/configure-pages@v5
         continue-on-error: true  # the repo token cannot switch Pages on; ultrastable/ultrastable pages-enable.yml does it once
