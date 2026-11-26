@@ -26,5 +26,33 @@
    }
   ],
   "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "moderate-alcohol-consumption-health-benefit",
+  "title": "moderate alcohol consumption health benefit",
+  "lean": "",
+  "summary": "Whether wine is better than beer or spirits, though suggestive, remains to be established.",
+  "sources": [
+   {
+    "title": "Moderate alcohol consumption and cardiovascular risk reduction: open issues",
+    "year": 2006,
+    "doi": "10.2427/5933"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "intermittent-fasting-long-term-benefit",
+  "title": "intermittent fasting long-term benefit",
+  "lean": "none",
+  "summary": "the mechanistic basis for this effect is not resolved.",
+  "sources": [
+   {
+    "title": "Therapeutic potential of the genus Bacteroides in hypertension: an intervention of long-term intermittent fasting",
+    "year": 2025,
+    "doi": "10.1101/2025.04.10.25325255"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
  }
 ]
