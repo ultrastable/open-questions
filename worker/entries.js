@@ -3,7 +3,9 @@
 // The published open questions of Open Questions. Empty until the first one is graded: nothing is typed here without a cited source (IDEA.md, Constraints).
 // Shape of one entry: { id, title, summary, sources: [{ title, year, doi }], grade }. `validate` is what a new entry must pass; the router and
 // the tests read this one list, so a page, /api/entries.json, the graph and the social queue cannot disagree.
-export const ENTRIES = [];
+import LIST from "../data/entries.json" with { type: "json" };
+// GH-ONLY-1: the list is data/entries.json, written by the GitHub loop (github/loop.mjs) only after github/verify.mjs passes.
+export const ENTRIES = LIST;
 export const EMPTY_WHY = "No open questions are published yet: each one needs a cited, graded source first.";
 
 export function validate(e = {}) {

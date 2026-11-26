@@ -4,21 +4,22 @@
   "slug": "open-questions",
   "summary": "What science honestly does not know yet: the big open questions, where the evidence leans today, and how that lean has moved.",
   "repo": "ultrastable/open-questions",
-  "public_url": null,
+  "public_url": "https://ultrastable.github.io/open-questions",
   "planned_url": "https://open-questions.ultrastable.org",
   "license": "LicenseRef-Ultrastable-USL-1.0",
   "topics": [
    "autonomous-system",
-   "cloudflare-workers",
+   "github-actions",
+   "github-pages",
    "ultrastable"
   ],
   "layer": "tenant",
   "runs_as": {
-   "platform": "cloudflare-workers",
-   "worker": "ultrastable-open-questions",
-   "deployed": false,
+   "platform": "github",
+   "worker": null,
+   "deployed": true,
    "deployed_from": "main",
-   "deployed_by": "ultrastable/ultrastable deploy-ultrastable"
+   "deployed_by": "ultrastable/open-questions loop.yml (GitHub Actions to GitHub Pages)"
   }
  }
 }
