@@ -68,6 +68,7 @@ export async function handle(request, env = {}, now = Date.now()) {
   const url = new URL(request.url), p = url.pathname.replace(/\/+$/, "") || "/";
   const fromContract = contractRoute(p, SPEC);
   if (fromContract) return fromContract;
+  if (p === "/pulse/watch" && request.method === "POST") return health(env, now); // second route to restart a stalled beat (doctrine/resilience.json)
   if (request.method !== "GET" && request.method !== "HEAD") return json({ error: "method_not_allowed" }, 405, "no-store");
   if (p === "/health") return health(env, now);
   if (p === "/") {
