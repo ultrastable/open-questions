@@ -110,5 +110,33 @@
    }
   ],
   "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "ego-depletion-replication",
+  "title": "ego depletion replication",
+  "lean": "effect likely overstated",
+  "summary": "Existing evidence suggests depletion is a real phenomenon, but that its effect is likely overstated in prior literature.",
+  "sources": [
+   {
+    "title": "Making Sense of Ego Depletion: The Replication Crisis, a Path Forward, and Lessons for Accounting Researchers",
+    "year": 2022,
+    "doi": "10.31234/osf.io/hcq9e"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "red-meat-cancer-risk",
+  "title": "red meat cancer risk",
+  "lean": "none",
+  "summary": "Total red meat, unprocessed red meat, and processed meat intakes were not significantly associated with risk of breast cancer when holding intake of other protein sources constant.",
+  "sources": [
+   {
+    "title": "Abstract 3471: Total red meat, unprocessed red meat, processed meat and risk of breast cancer - a pooled analysis of 23 cohort studies",
+    "year": 2020,
+    "doi": "10.1158/1538-7445.am2020-3471"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
  }
 ]
