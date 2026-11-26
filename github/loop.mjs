@@ -26,6 +26,7 @@ async function sources(topic) {
 
 // Two free model routes, so no single provider stops the loop: GitHub Models on the run's own token, then Hugging Face's router when an
 // HF_TOKEN secret exists (a free account's token; without it that route is skipped and says so).
+let lastPoll = 0;
 async function chat(prompt) {
   const routes = [
     { name: "github-models", url: "https://models.github.ai/inference/chat/completions", key: TOKEN, model: MODEL },
@@ -36,6 +37,9 @@ async function chat(prompt) {
   ];
   let last = "";
   for (const r0 of routes) {
+    // Pollinations allows one free reply per 45 s per IP; wait out the gap instead of losing the try.
+    if (r0.name === "pollinations" && lastPoll && Date.now() - lastPoll < 46000) await new Promise(ok => setTimeout(ok, 46000 - (Date.now() - lastPoll)));
+    if (r0.name === "pollinations") lastPoll = Date.now();
     if (!r0.key) { say("route", r0.name, "skipped: no token"); continue; }
     const r = await fetch(r0.url, { method: "POST", headers: { ...(r0.key === "none" ? {} : { authorization: "Bearer " + r0.key }), "content-type": "application/json", accept: "application/vnd.github+json", "x-github-api-version": "2022-11-28", "user-agent": UA },
       body: JSON.stringify({ model: r0.model, temperature: 0, max_tokens: 400, messages: [{ role: "system", content: "You extract facts from study abstracts. Reply with one JSON object and nothing else." }, { role: "user", content: prompt }] }) });
