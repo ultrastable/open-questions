@@ -96,5 +96,19 @@
    }
   ],
   "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "gut-microbiome-causal-role-in-disease",
+  "title": "gut microbiome causal role in disease",
+  "lean": "unlikely causal",
+  "summary": "subsequent sensitivity analyses, including colocalisation, suggested these findings were unlikely reflective of causality.",
+  "sources": [
+   {
+    "title": "Exploring the causal role of the human gut microbiome in endometrial cancer: a Mendelian randomization approach",
+    "year": 2024,
+    "doi": "10.1101/2024.03.06.24303765"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
  }
 ]
