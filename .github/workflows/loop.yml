@@ -1,0 +1,57 @@
+name: loop
+# SPDX-License-Identifier: LicenseRef-Ultrastable-USL-1.0
+# GH-ONLY-1: Open Questions runs on GitHub alone. Actions is the clock and the executor, Issues are the work queue, data/entries.json is the
+# database, node:sqlite holds the beat ledger in the run, GitHub Models drafts (Hugging Face as the second route), github/verify.mjs decides,
+# Pages is the front end. A run commits only when a verified entry is new; beats travel through the published site, never through commits.
+# budget: ~1 min per run, 2 runs a day (public repository: Actions minutes are free); at most 2 model calls a run
+# trigger: schedule twice a day, push to main, dispatch
+# free-alternative: the same Worker code on Cloudflare (worker/index.js, wrangler.jsonc)
+on:
+  schedule:
+    - cron: "13 3,15 * * *"
+  push:
+    branches: [main]
+    paths-ignore: ["data/entries.json"]
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+  models: read
+  pages: write
+  id-token: write
+concurrency:
+  group: loop
+  cancel-in-progress: false
+jobs:
+  run:
+    if: ${{ vars.HALT != '1' }}  # HALT-1
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    environment: { name: github-pages, url: "${{ steps.deploy.outputs.page_url }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 24}
+      - run: npm test
+      - name: Find, draft and verify open questions
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: node github/loop.mjs
+      - name: Commit a new entry, only when there is one
+        run: |
+          if git diff --quiet data/entries.json; then echo "no new entry, nothing committed"; exit 0; fi
+          git config user.name "open-questions-loop"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "feat(entries): publish verified open questions" data/entries.json
+          git push
+      - name: Build the site from the router
+        run: node github/build.mjs
+      - id: pages
+        uses: actions/configure-pages@v5
+        continue-on-error: true  # the repo token cannot switch Pages on; ultrastable/ultrastable pages-enable.yml does it once
+      - if: steps.pages.outcome == 'success'
+        uses: actions/upload-pages-artifact@v3
+        with: {path: _site}
+      - id: deploy
+        if: steps.pages.outcome == 'success'
+        uses: actions/deploy-pages@v4

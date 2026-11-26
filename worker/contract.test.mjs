@@ -36,6 +36,6 @@ test("an endpoint nothing describes fails the reading, back to front", async () 
 test("the manifest names this system and the claims list every statement", async () => {
   const real = site();
   const m = await (await real("/.well-known/ultrastable.json")).json(), c = await (await real("/claims.json")).json();
-  assert.equal(m.ultrastable, 1); assert.equal(m.url, SITE); assert.equal(m.repo, "https://github.com/" + ID.repo); assert.equal(m.name, ID.name);
+  assert.equal(m.ultrastable, 1); assert.equal(m.url, new URL(SITE).origin); // the core contract names an origin; a Pages project site lives under /<repo>/ assert.equal(m.repo, "https://github.com/" + ID.repo); assert.equal(m.name, ID.name);
   assert.deepEqual(c.statements.map(s => s.id), SPEC.statements.map(s => s.id));
 });
