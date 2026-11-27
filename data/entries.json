@@ -222,5 +222,19 @@
    }
   ],
   "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "does-growth-mindset-intervention-work",
+  "title": "Does growth mindset intervention work?",
+  "lean": "Improved grades by 0.10 points for lower-achieving adolescents.",
+  "summary": "A recent large, national experiment found that a brief growth mindset intervention improved lower-achieving adolescents’ grades by 0.10 points.",
+  "sources": [
+   {
+    "title": "When Do Growth Mindset Interventions Work?",
+    "year": 2019,
+    "doi": "10.31234/osf.io/kjrxb"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
  }
 ]
