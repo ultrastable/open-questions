@@ -194,5 +194,33 @@
    }
   ],
   "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "consciousness-neural-correlates",
+  "title": "What are the neural correlates of consciousness?",
+  "lean": "The evidence favors a hierarchical processing architecture with a role for prefrontal cortex.",
+  "summary": "By highlighting some neurobiological and computational modelling results, it will be argued that the currently available evidence favors a hierarchical processing architecture that confers a crucial, if subtle and specific, role to prefrontal cortex.",
+  "sources": [
+   {
+    "title": "The Neural Correlates of Consciousness",
+    "year": 2020,
+    "doi": "10.1093/oxfordhb/9780198749677.013.11"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "cause-of-alzheimer-s-disease-amyloid-hypothesis",
+  "title": "What is the cause of Alzheimer's disease according to the amyloid hypothesis?",
+  "lean": "The hypothesis may still be correct, but direct β-amyloid manipulation may be unrealistic.",
+  "summary": "Thus the clinical failure of β-amyloid-lowering agents does not mean that the hypothesis itself is incorrect; it may simply mean that manipulating β-amyloid directly is an unrealistic strategy for therapeutic intervention, given the complex role of β-amyloid in neuronal physiology.",
+  "sources": [
+   {
+    "title": "Is the Amyloid Hypothesis of Alzheimer's disease therapeutically relevant?",
+    "year": 2012,
+    "doi": "10.1042/bj20120653"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
  }
 ]
