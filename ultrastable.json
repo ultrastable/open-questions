@@ -5,7 +5,6 @@
   "summary": "What science honestly does not know yet: the big open questions, where the evidence leans today, and how that lean has moved.",
   "repo": "ultrastable/open-questions",
   "public_url": "https://open-questions.ultrastable.org",
-  "planned_url": "https://open-questions.ultrastable.org",
   "license": "LicenseRef-Ultrastable-USL-1.0",
   "topics": [
    "autonomous-system",
@@ -14,12 +13,27 @@
    "ultrastable"
   ],
   "layer": "tenant",
-  "runs_as": {
-   "platform": "github",
-   "worker": null,
-   "deployed": true,
-   "deployed_from": "main",
-   "deployed_by": "ultrastable/open-questions loop.yml (GitHub Actions to GitHub Pages)"
-  }
+  "runs_as": [
+   {
+    "provider": "cloudflare",
+    "kind": "worker",
+    "name": "ultrastable-open-questions",
+    "routes": [
+     "open-questions.ultrastable.org"
+    ],
+    "how": "deployed from this repository's `main` by the Ultrastable platform"
+   },
+   {
+    "provider": "github",
+    "kind": "pages",
+    "name": "open-questions",
+    "how": "ultrastable/open-questions loop.yml (GitHub Actions to GitHub Pages)"
+   }
+  ],
+  "parent": "ultrastable/ultrastable",
+  "status": "live",
+  "visibility": "public",
+  "visibility_reason": "DISCOVER-1: public by default",
+  "loop": "A weekly beat watches review and preprint feeds for each question, files new evidence on the entry and moves the lean only when graded evidence moves it, recording why."
  }
 }

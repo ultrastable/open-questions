@@ -1,0 +1,22 @@
+{
+ "@context": "https://w3id.org/codemeta/3.0",
+ "@type": "SoftwareSourceCode",
+ "name": "Open Questions",
+ "description": "What science honestly does not know yet: the big open questions, where the evidence leans today, and how that lean has moved.",
+ "codeRepository": "https://github.com/ultrastable/open-questions",
+ "url": "https://open-questions.ultrastable.org",
+ "license": "https://github.com/ultrastable/open-questions/blob/main/LICENSE",
+ "author": [
+  {
+   "@type": "Person",
+   "@id": "https://orcid.org/0009-0002-4317-5604",
+   "name": "Rowan Brad Quni-Gudzinas"
+  }
+ ],
+ "keywords": [
+  "autonomous-system",
+  "github-actions",
+  "github-pages",
+  "ultrastable"
+ ]
+}

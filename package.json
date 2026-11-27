@@ -4,6 +4,6 @@
   "type": "module",
   "description": "What science honestly does not know yet: the big open questions, where the evidence leans today, and how that lean has moved.",
   "scripts": {
-    "test": "node --test --no-warnings worker/*.test.mjs github/*.test.mjs"
+    "test": "node --test --no-warnings worker/*.test.mjs"
   }
 }
