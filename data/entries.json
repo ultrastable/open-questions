@@ -166,5 +166,33 @@
    }
   ],
   "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "dark-matter-nature",
+  "title": "What is the nature of dark matter?",
+  "lean": "Still unknown",
+  "summary": "It is extremely interesting that there is still no clear understanding of the nature of dark energy, as well as the extreme scarcity of information about dark matter.",
+  "sources": [
+   {
+    "title": "Theoretical research \"A new understanding of the nature of dark energy and dark matter\"",
+    "year": 2025,
+    "doi": "10.24108/preprints-3113864"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "origin-of-life-abiogenesis",
+  "title": "What is the origin of life through abiogenesis?",
+  "lean": "Unresolved; no lean.",
+  "summary": "Whether life is an inevitable consequence of the laws of nature or an exceptional outcome of prebiotic evolution is unresolved.",
+  "sources": [
+   {
+    "title": "An Erdős-Inspired Perspective on Abiogenesis",
+    "year": 2026,
+    "doi": "10.20944/preprints202607.2211.v1"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
  }
 ]
