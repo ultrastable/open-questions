@@ -138,5 +138,61 @@
    }
   ],
   "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "vitamin-d-supplementation-outcomes",
+  "title": "What are the outcomes of vitamin D supplementation?",
+  "lean": "Evidence leans toward no improvement in cardiovascular health (no numbers).",
+  "summary": "In conclusion, results from published RCTs indicate that vitamin D supplementation is ineffective in improving cardiovascular health among various patient populations, including in the presence or absence of vitamin D deficiency.",
+  "sources": [
+   {
+    "title": "Effectiveness of Vitamin D Supplementation for Cardiovascular Health Outcomes",
+    "year": 2016,
+    "doi": "10.1159/000452742"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "screen-time-child-development",
+  "title": "How does screen time affect child development?",
+  "lean": "Evidence leans toward associations with adverse developmental and mental health outcomes.",
+  "summary": "Excessive screen exposure has been associated with language delays, impaired attention, sleep disturbances, obesity, anxiety, depression, behavioral difficulties, cyberbullying exposure, and impaired social-emotional functioning.",
+  "sources": [
+   {
+    "title": "The Impact of Screen Time on Child Development and Mental Health: A Narrative Review",
+    "year": 2026,
+    "doi": "10.18535/jmscr/v14i07.01"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "dark-matter-nature",
+  "title": "What is the nature of dark matter?",
+  "lean": "Still unknown",
+  "summary": "It is extremely interesting that there is still no clear understanding of the nature of dark energy, as well as the extreme scarcity of information about dark matter.",
+  "sources": [
+   {
+    "title": "Theoretical research \"A new understanding of the nature of dark energy and dark matter\"",
+    "year": 2025,
+    "doi": "10.24108/preprints-3113864"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "origin-of-life-abiogenesis",
+  "title": "What is the origin of life through abiogenesis?",
+  "lean": "Unresolved; no lean.",
+  "summary": "Whether life is an inevitable consequence of the laws of nature or an exceptional outcome of prebiotic evolution is unresolved.",
+  "sources": [
+   {
+    "title": "An Erdős-Inspired Perspective on Abiogenesis",
+    "year": 2026,
+    "doi": "10.20944/preprints202607.2211.v1"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
  }
 ]
