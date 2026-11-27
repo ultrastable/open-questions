@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+authors:
+  - name: "Rowan Brad Quni-Gudzinas"
+title: "Open Questions"
+abstract: "What science honestly does not know yet: the big open questions, where the evidence leans today, and how that lean has moved."
+repository-code: "https://github.com/ultrastable/open-questions"
+license-url: "https://github.com/ultrastable/open-questions/blob/main/LICENSE"
+url: "https://open-questions.ultrastable.org"

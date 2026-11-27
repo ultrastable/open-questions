@@ -1,0 +1,28 @@
+# Open Questions
+
+> What science honestly does not know yet: the big open questions, where the evidence leans today, and how that lean has moved.
+
+A weekly beat watches review and preprint feeds for each question, files new evidence on the entry and moves the lean only when graded evidence moves it, recording why.
+
+## Live
+
+- [Open Questions](https://open-questions.ultrastable.org/): the running system
+- [Health report](https://open-questions.ultrastable.org/health): the result of its last tick
+- [Statements](https://open-questions.ultrastable.org/claims.json): what it states, and the endpoint behind each statement
+- [llms.txt](https://open-questions.ultrastable.org/llms.txt): the index the running system serves, with every route it answers
+
+## Start here
+
+- [README.md](README.md): what it is, where it runs and how it runs
+- [AGENTS.md](AGENTS.md): instructions for any coding agent
+- [IDEA.md](IDEA.md): the one file a person writes
+- [ultrastable.json](ultrastable.json): the manifest this file, the README blocks, CITATION.cff, publiccode.yml and codemeta.json are rendered from
+- [codemeta.json](codemeta.json): software metadata (CodeMeta 3.0)
+
+## Optional
+
+- [Source](https://github.com/ultrastable/open-questions): the repository
+- [LICENSE](LICENSE): the licence, LicenseRef-Ultrastable-USL-1.0
+- [CONTRIBUTING.md](CONTRIBUTING.md): how work is contributed
+- [SECURITY.md](SECURITY.md): how to report a vulnerability
+- [CHANGELOG.md](CHANGELOG.md): what changed, release by release

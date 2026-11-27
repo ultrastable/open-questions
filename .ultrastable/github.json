@@ -1,0 +1,22 @@
+{
+ "repo": "ultrastable/open-questions",
+ "description": "What science honestly does not know yet: the big open questions, where the evidence leans today, and how that lean has moved.",
+ "homepage": "https://open-questions.ultrastable.org",
+ "topics": [
+  "autonomous-system",
+  "github-actions",
+  "github-pages",
+  "ultrastable"
+ ],
+ "settings": {
+  "has_wiki": false,
+  "allow_squash_merge": true,
+  "allow_merge_commit": false,
+  "allow_rebase_merge": false,
+  "allow_auto_merge": true,
+  "allow_update_branch": true,
+  "delete_branch_on_merge": true,
+  "private": false,
+  "is_template": false
+ }
+}
