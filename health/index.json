@@ -1,0 +1,12 @@
+{
+ "ok": true,
+ "system": "Open Questions",
+ "stage": "publishing",
+ "blocks_next": null,
+ "entries": 20,
+ "halted": false,
+ "clock": "ticking",
+ "every_hours": 168,
+ "last_beat": "2026-11-28T06:17:23.656Z",
+ "last_error": null
+}

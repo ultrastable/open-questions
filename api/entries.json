@@ -1,0 +1,285 @@
+{
+ "count": 20,
+ "entries": [
+  {
+   "id": "long-term-effects-of-social-media-on-adolescent-mental-healt",
+   "title": "long-term effects of social media on adolescent mental health",
+   "lean": "no significant association",
+   "summary": "In unadjusted models, social media use at age 15/16 was positively associated with anxiety and depression five years later, but these associations were no longer significant after adjusting for confounders.",
+   "sources": [
+    {
+     "title": "Long-term consequences of adolescent social media use on mental health in young adulthood",
+     "year": 2025,
+     "doi": "10.1093/eurpub/ckaf161.526"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "microplastics-human-health-effects",
+   "title": "microplastics human health effects",
+   "lean": "equivocal",
+   "summary": "Much evidence is equivocal and further research is necessary.",
+   "sources": [
+    {
+     "title": "Indoor Airborne Microplastics: Human Health Importance and Effects of Air Filtration and Turbulence",
+     "year": 2024,
+     "doi": "10.3390/microplastics3040040"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "moderate-alcohol-consumption-health-benefit",
+   "title": "moderate alcohol consumption health benefit",
+   "lean": "",
+   "summary": "Whether wine is better than beer or spirits, though suggestive, remains to be established.",
+   "sources": [
+    {
+     "title": "Moderate alcohol consumption and cardiovascular risk reduction: open issues",
+     "year": 2006,
+     "doi": "10.2427/5933"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "intermittent-fasting-long-term-benefit",
+   "title": "intermittent fasting long-term benefit",
+   "lean": "none",
+   "summary": "the mechanistic basis for this effect is not resolved.",
+   "sources": [
+    {
+     "title": "Therapeutic potential of the genus Bacteroides in hypertension: an intervention of long-term intermittent fasting",
+     "year": 2025,
+     "doi": "10.1101/2025.04.10.25325255"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "universal-basic-income-labour-supply",
+   "title": "universal basic income labour supply",
+   "lean": "no evidence of a significant reduction",
+   "summary": "We found a total of 50 empirical cases, of which 18 were selected, and 38 studies with contrasted empirical evidence on this relationship. The results speak for themselves: Despite a detailed search, we have not found any evidence of a significant reduction in labour supply.",
+   "sources": [
+    {
+     "title": "Is There Empirical Evidence on How the Implementation of a Universal Basic Income (UBI) Affects Labour Supply? A Systematic Review",
+     "year": 2020,
+     "doi": "10.3390/su12229459"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "why-we-sleep-function-of-sleep",
+   "title": "why we sleep function of sleep",
+   "lean": "",
+   "summary": "The question of “why do we sleep?” has been occupying scientists for some time and a clear answer has yet to be accepted by all.",
+   "sources": [
+    {
+     "title": "Why Do We Sleep? Human Sleep: Neurobiology and Function",
+     "year": 2011,
+     "doi": "10.2174/978160805267711101010003"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "hubble-tension-expansion-rate",
+   "title": "Hubble tension expansion rate",
+   "lean": "",
+   "summary": "We conclude that the tension is unlikely to be resolved by any single known systematic",
+   "sources": [
+    {
+     "title": "The Hubble Tension: A Review of Early- and Late-Universe Determinations of the Cosmic Expansion Rate and Proposed Theoretical Resolutions",
+     "year": 2026,
+     "doi": "10.34257/gjsfra259211"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "gut-microbiome-causal-role-in-disease",
+   "title": "gut microbiome causal role in disease",
+   "lean": "unlikely causal",
+   "summary": "subsequent sensitivity analyses, including colocalisation, suggested these findings were unlikely reflective of causality.",
+   "sources": [
+    {
+     "title": "Exploring the causal role of the human gut microbiome in endometrial cancer: a Mendelian randomization approach",
+     "year": 2024,
+     "doi": "10.1101/2024.03.06.24303765"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "ego-depletion-replication",
+   "title": "ego depletion replication",
+   "lean": "effect likely overstated",
+   "summary": "Existing evidence suggests depletion is a real phenomenon, but that its effect is likely overstated in prior literature.",
+   "sources": [
+    {
+     "title": "Making Sense of Ego Depletion: The Replication Crisis, a Path Forward, and Lessons for Accounting Researchers",
+     "year": 2022,
+     "doi": "10.31234/osf.io/hcq9e"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "red-meat-cancer-risk",
+   "title": "red meat cancer risk",
+   "lean": "none",
+   "summary": "Total red meat, unprocessed red meat, and processed meat intakes were not significantly associated with risk of breast cancer when holding intake of other protein sources constant.",
+   "sources": [
+    {
+     "title": "Abstract 3471: Total red meat, unprocessed red meat, processed meat and risk of breast cancer - a pooled analysis of 23 cohort studies",
+     "year": 2020,
+     "doi": "10.1158/1538-7445.am2020-3471"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "vitamin-d-supplementation-outcomes",
+   "title": "What are the outcomes of vitamin D supplementation?",
+   "lean": "Evidence leans toward no improvement in cardiovascular health (no numbers).",
+   "summary": "In conclusion, results from published RCTs indicate that vitamin D supplementation is ineffective in improving cardiovascular health among various patient populations, including in the presence or absence of vitamin D deficiency.",
+   "sources": [
+    {
+     "title": "Effectiveness of Vitamin D Supplementation for Cardiovascular Health Outcomes",
+     "year": 2016,
+     "doi": "10.1159/000452742"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "screen-time-child-development",
+   "title": "How does screen time affect child development?",
+   "lean": "Evidence leans toward associations with adverse developmental and mental health outcomes.",
+   "summary": "Excessive screen exposure has been associated with language delays, impaired attention, sleep disturbances, obesity, anxiety, depression, behavioral difficulties, cyberbullying exposure, and impaired social-emotional functioning.",
+   "sources": [
+    {
+     "title": "The Impact of Screen Time on Child Development and Mental Health: A Narrative Review",
+     "year": 2026,
+     "doi": "10.18535/jmscr/v14i07.01"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "dark-matter-nature",
+   "title": "What is the nature of dark matter?",
+   "lean": "Still unknown",
+   "summary": "It is extremely interesting that there is still no clear understanding of the nature of dark energy, as well as the extreme scarcity of information about dark matter.",
+   "sources": [
+    {
+     "title": "Theoretical research \"A new understanding of the nature of dark energy and dark matter\"",
+     "year": 2025,
+     "doi": "10.24108/preprints-3113864"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "origin-of-life-abiogenesis",
+   "title": "What is the origin of life through abiogenesis?",
+   "lean": "Unresolved; no lean.",
+   "summary": "Whether life is an inevitable consequence of the laws of nature or an exceptional outcome of prebiotic evolution is unresolved.",
+   "sources": [
+    {
+     "title": "An Erdős-Inspired Perspective on Abiogenesis",
+     "year": 2026,
+     "doi": "10.20944/preprints202607.2211.v1"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "consciousness-neural-correlates",
+   "title": "What are the neural correlates of consciousness?",
+   "lean": "The evidence favors a hierarchical processing architecture with a role for prefrontal cortex.",
+   "summary": "By highlighting some neurobiological and computational modelling results, it will be argued that the currently available evidence favors a hierarchical processing architecture that confers a crucial, if subtle and specific, role to prefrontal cortex.",
+   "sources": [
+    {
+     "title": "The Neural Correlates of Consciousness",
+     "year": 2020,
+     "doi": "10.1093/oxfordhb/9780198749677.013.11"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "cause-of-alzheimer-s-disease-amyloid-hypothesis",
+   "title": "What is the cause of Alzheimer's disease according to the amyloid hypothesis?",
+   "lean": "The hypothesis may still be correct, but direct β-amyloid manipulation may be unrealistic.",
+   "summary": "Thus the clinical failure of β-amyloid-lowering agents does not mean that the hypothesis itself is incorrect; it may simply mean that manipulating β-amyloid directly is an unrealistic strategy for therapeutic intervention, given the complex role of β-amyloid in neuronal physiology.",
+   "sources": [
+    {
+     "title": "Is the Amyloid Hypothesis of Alzheimer's disease therapeutically relevant?",
+     "year": 2012,
+     "doi": "10.1042/bj20120653"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "does-growth-mindset-intervention-work",
+   "title": "Does growth mindset intervention work?",
+   "lean": "Improved grades by 0.10 points for lower-achieving adolescents.",
+   "summary": "A recent large, national experiment found that a brief growth mindset intervention improved lower-achieving adolescents’ grades by 0.10 points.",
+   "sources": [
+    {
+     "title": "When Do Growth Mindset Interventions Work?",
+     "year": 2019,
+     "doi": "10.31234/osf.io/kjrxb"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "placebo-effect-mechanism",
+   "title": "What is the mechanism of the placebo effect?",
+   "lean": "Leans toward expectations as a key mechanism; whether assessing them affects placebo responding remains unknown.",
+   "summary": "Expectations are considered a key mechanism in placebo effects, yet the impact of assessing expectations on placebo responding remains unknown.",
+   "sources": [
+    {
+     "title": "To Ask or Not to Ask: Does Inquiring About Participants' Expectations Influence the Placebo Effect? A Placebo Mechanism Study in Healthy Volunteers",
+     "year": 2026,
+     "doi": "10.1002/ejp.70384"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "minimum-wage-employment-effect",
+   "title": "What is the minimum wage employment effect?",
+   "lean": "No consensus on the extent of the employment effect.",
+   "summary": "The voluminous literature on minimum wages offers little consensus on the extent to which a wage floor impacts employment.",
+   "sources": [
+    {
+     "title": "Effects of the Minimum Wage on Employment Dynamics",
+     "year": 2015,
+     "doi": "10.2139/ssrn.2654355"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  },
+  {
+   "id": "antidepressant-efficacy-versus-placebo",
+   "title": "Is antidepressant treatment more efficacious than placebo?",
+   "lean": "No statistically significant evidence of greater improvement.",
+   "summary": "In this study, bupropion XR did not demonstrate statistically significant evidence of greater improvement from",
+   "sources": [
+    {
+     "title": "Double-blind, placebo-controlled comparison of the antidepressant efficacy and tolerability of bupropion XR and venlafaxine XR",
+     "year": 2009,
+     "doi": "10.1177/0269881109106953"
+    }
+   ],
+   "grade": "lean quoted from the source abstract; study design not yet graded"
+  }
+ ]
+}

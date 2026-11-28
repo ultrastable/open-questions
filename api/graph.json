@@ -1,0 +1,312 @@
+{
+ "system": "Open Questions",
+ "built_from": "/api/entries.json",
+ "counts": {
+  "nodes": 40,
+  "edges": 20
+ },
+ "nodes": [
+  {
+   "id": "entry:long-term-effects-of-social-media-on-adolescent-mental-healt",
+   "kind": "entry",
+   "label": "long-term effects of social media on adolescent mental health"
+  },
+  {
+   "id": "source:10.1093/eurpub/ckaf161.526",
+   "kind": "source",
+   "label": "Long-term consequences of adolescent social media use on mental health in young adulthood"
+  },
+  {
+   "id": "entry:microplastics-human-health-effects",
+   "kind": "entry",
+   "label": "microplastics human health effects"
+  },
+  {
+   "id": "source:10.3390/microplastics3040040",
+   "kind": "source",
+   "label": "Indoor Airborne Microplastics: Human Health Importance and Effects of Air Filtration and Turbulence"
+  },
+  {
+   "id": "entry:moderate-alcohol-consumption-health-benefit",
+   "kind": "entry",
+   "label": "moderate alcohol consumption health benefit"
+  },
+  {
+   "id": "source:10.2427/5933",
+   "kind": "source",
+   "label": "Moderate alcohol consumption and cardiovascular risk reduction: open issues"
+  },
+  {
+   "id": "entry:intermittent-fasting-long-term-benefit",
+   "kind": "entry",
+   "label": "intermittent fasting long-term benefit"
+  },
+  {
+   "id": "source:10.1101/2025.04.10.25325255",
+   "kind": "source",
+   "label": "Therapeutic potential of the genus Bacteroides in hypertension: an intervention of long-term intermittent fasting"
+  },
+  {
+   "id": "entry:universal-basic-income-labour-supply",
+   "kind": "entry",
+   "label": "universal basic income labour supply"
+  },
+  {
+   "id": "source:10.3390/su12229459",
+   "kind": "source",
+   "label": "Is There Empirical Evidence on How the Implementation of a Universal Basic Income (UBI) Affects Labour Supply? A Systematic Review"
+  },
+  {
+   "id": "entry:why-we-sleep-function-of-sleep",
+   "kind": "entry",
+   "label": "why we sleep function of sleep"
+  },
+  {
+   "id": "source:10.2174/978160805267711101010003",
+   "kind": "source",
+   "label": "Why Do We Sleep? Human Sleep: Neurobiology and Function"
+  },
+  {
+   "id": "entry:hubble-tension-expansion-rate",
+   "kind": "entry",
+   "label": "Hubble tension expansion rate"
+  },
+  {
+   "id": "source:10.34257/gjsfra259211",
+   "kind": "source",
+   "label": "The Hubble Tension: A Review of Early- and Late-Universe Determinations of the Cosmic Expansion Rate and Proposed Theoretical Resolutions"
+  },
+  {
+   "id": "entry:gut-microbiome-causal-role-in-disease",
+   "kind": "entry",
+   "label": "gut microbiome causal role in disease"
+  },
+  {
+   "id": "source:10.1101/2024.03.06.24303765",
+   "kind": "source",
+   "label": "Exploring the causal role of the human gut microbiome in endometrial cancer: a Mendelian randomization approach"
+  },
+  {
+   "id": "entry:ego-depletion-replication",
+   "kind": "entry",
+   "label": "ego depletion replication"
+  },
+  {
+   "id": "source:10.31234/osf.io/hcq9e",
+   "kind": "source",
+   "label": "Making Sense of Ego Depletion: The Replication Crisis, a Path Forward, and Lessons for Accounting Researchers"
+  },
+  {
+   "id": "entry:red-meat-cancer-risk",
+   "kind": "entry",
+   "label": "red meat cancer risk"
+  },
+  {
+   "id": "source:10.1158/1538-7445.am2020-3471",
+   "kind": "source",
+   "label": "Abstract 3471: Total red meat, unprocessed red meat, processed meat and risk of breast cancer - a pooled analysis of 23 cohort studies"
+  },
+  {
+   "id": "entry:vitamin-d-supplementation-outcomes",
+   "kind": "entry",
+   "label": "What are the outcomes of vitamin D supplementation?"
+  },
+  {
+   "id": "source:10.1159/000452742",
+   "kind": "source",
+   "label": "Effectiveness of Vitamin D Supplementation for Cardiovascular Health Outcomes"
+  },
+  {
+   "id": "entry:screen-time-child-development",
+   "kind": "entry",
+   "label": "How does screen time affect child development?"
+  },
+  {
+   "id": "source:10.18535/jmscr/v14i07.01",
+   "kind": "source",
+   "label": "The Impact of Screen Time on Child Development and Mental Health: A Narrative Review"
+  },
+  {
+   "id": "entry:dark-matter-nature",
+   "kind": "entry",
+   "label": "What is the nature of dark matter?"
+  },
+  {
+   "id": "source:10.24108/preprints-3113864",
+   "kind": "source",
+   "label": "Theoretical research \"A new understanding of the nature of dark energy and dark matter\""
+  },
+  {
+   "id": "entry:origin-of-life-abiogenesis",
+   "kind": "entry",
+   "label": "What is the origin of life through abiogenesis?"
+  },
+  {
+   "id": "source:10.20944/preprints202607.2211.v1",
+   "kind": "source",
+   "label": "An Erdős-Inspired Perspective on Abiogenesis"
+  },
+  {
+   "id": "entry:consciousness-neural-correlates",
+   "kind": "entry",
+   "label": "What are the neural correlates of consciousness?"
+  },
+  {
+   "id": "source:10.1093/oxfordhb/9780198749677.013.11",
+   "kind": "source",
+   "label": "The Neural Correlates of Consciousness"
+  },
+  {
+   "id": "entry:cause-of-alzheimer-s-disease-amyloid-hypothesis",
+   "kind": "entry",
+   "label": "What is the cause of Alzheimer's disease according to the amyloid hypothesis?"
+  },
+  {
+   "id": "source:10.1042/bj20120653",
+   "kind": "source",
+   "label": "Is the Amyloid Hypothesis of Alzheimer's disease therapeutically relevant?"
+  },
+  {
+   "id": "entry:does-growth-mindset-intervention-work",
+   "kind": "entry",
+   "label": "Does growth mindset intervention work?"
+  },
+  {
+   "id": "source:10.31234/osf.io/kjrxb",
+   "kind": "source",
+   "label": "When Do Growth Mindset Interventions Work?"
+  },
+  {
+   "id": "entry:placebo-effect-mechanism",
+   "kind": "entry",
+   "label": "What is the mechanism of the placebo effect?"
+  },
+  {
+   "id": "source:10.1002/ejp.70384",
+   "kind": "source",
+   "label": "To Ask or Not to Ask: Does Inquiring About Participants' Expectations Influence the Placebo Effect? A Placebo Mechanism Study in Healthy Volunteers"
+  },
+  {
+   "id": "entry:minimum-wage-employment-effect",
+   "kind": "entry",
+   "label": "What is the minimum wage employment effect?"
+  },
+  {
+   "id": "source:10.2139/ssrn.2654355",
+   "kind": "source",
+   "label": "Effects of the Minimum Wage on Employment Dynamics"
+  },
+  {
+   "id": "entry:antidepressant-efficacy-versus-placebo",
+   "kind": "entry",
+   "label": "Is antidepressant treatment more efficacious than placebo?"
+  },
+  {
+   "id": "source:10.1177/0269881109106953",
+   "kind": "source",
+   "label": "Double-blind, placebo-controlled comparison of the antidepressant efficacy and tolerability of bupropion XR and venlafaxine XR"
+  }
+ ],
+ "edges": [
+  {
+   "from": "entry:long-term-effects-of-social-media-on-adolescent-mental-healt",
+   "to": "source:10.1093/eurpub/ckaf161.526",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:microplastics-human-health-effects",
+   "to": "source:10.3390/microplastics3040040",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:moderate-alcohol-consumption-health-benefit",
+   "to": "source:10.2427/5933",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:intermittent-fasting-long-term-benefit",
+   "to": "source:10.1101/2025.04.10.25325255",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:universal-basic-income-labour-supply",
+   "to": "source:10.3390/su12229459",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:why-we-sleep-function-of-sleep",
+   "to": "source:10.2174/978160805267711101010003",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:hubble-tension-expansion-rate",
+   "to": "source:10.34257/gjsfra259211",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:gut-microbiome-causal-role-in-disease",
+   "to": "source:10.1101/2024.03.06.24303765",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:ego-depletion-replication",
+   "to": "source:10.31234/osf.io/hcq9e",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:red-meat-cancer-risk",
+   "to": "source:10.1158/1538-7445.am2020-3471",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:vitamin-d-supplementation-outcomes",
+   "to": "source:10.1159/000452742",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:screen-time-child-development",
+   "to": "source:10.18535/jmscr/v14i07.01",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:dark-matter-nature",
+   "to": "source:10.24108/preprints-3113864",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:origin-of-life-abiogenesis",
+   "to": "source:10.20944/preprints202607.2211.v1",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:consciousness-neural-correlates",
+   "to": "source:10.1093/oxfordhb/9780198749677.013.11",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:cause-of-alzheimer-s-disease-amyloid-hypothesis",
+   "to": "source:10.1042/bj20120653",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:does-growth-mindset-intervention-work",
+   "to": "source:10.31234/osf.io/kjrxb",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:placebo-effect-mechanism",
+   "to": "source:10.1002/ejp.70384",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:minimum-wage-employment-effect",
+   "to": "source:10.2139/ssrn.2654355",
+   "kind": "cites"
+  },
+  {
+   "from": "entry:antidepressant-efficacy-versus-placebo",
+   "to": "source:10.1177/0269881109106953",
+   "kind": "cites"
+  }
+ ]
+}

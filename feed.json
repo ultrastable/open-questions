@@ -1,0 +1,129 @@
+{
+ "version": "https://jsonfeed.org/version/1.1",
+ "title": "Open Questions",
+ "home_page_url": "https://open-questions.ultrastable.org/",
+ "feed_url": "https://open-questions.ultrastable.org/feed.json",
+ "description": "What science honestly does not know yet: the big open questions, where the evidence leans today, and how that lean has moved.",
+ "items": [
+  {
+   "id": "https://open-questions.ultrastable.org/#long-term-effects-of-social-media-on-adolescent-mental-healt",
+   "url": "https://open-questions.ultrastable.org/#long-term-effects-of-social-media-on-adolescent-mental-healt",
+   "title": "long-term effects of social media on adolescent mental health",
+   "content_text": "In unadjusted models, social media use at age 15/16 was positively associated with anxiety and depression five years later, but these associations were no longer significant after adjusting for confounders."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#microplastics-human-health-effects",
+   "url": "https://open-questions.ultrastable.org/#microplastics-human-health-effects",
+   "title": "microplastics human health effects",
+   "content_text": "Much evidence is equivocal and further research is necessary."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#moderate-alcohol-consumption-health-benefit",
+   "url": "https://open-questions.ultrastable.org/#moderate-alcohol-consumption-health-benefit",
+   "title": "moderate alcohol consumption health benefit",
+   "content_text": "Whether wine is better than beer or spirits, though suggestive, remains to be established."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#intermittent-fasting-long-term-benefit",
+   "url": "https://open-questions.ultrastable.org/#intermittent-fasting-long-term-benefit",
+   "title": "intermittent fasting long-term benefit",
+   "content_text": "the mechanistic basis for this effect is not resolved."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#universal-basic-income-labour-supply",
+   "url": "https://open-questions.ultrastable.org/#universal-basic-income-labour-supply",
+   "title": "universal basic income labour supply",
+   "content_text": "We found a total of 50 empirical cases, of which 18 were selected, and 38 studies with contrasted empirical evidence on this relationship. The results speak for themselves: Despite a detailed search, we have not found any evidence of a significant reduction in labour supply."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#why-we-sleep-function-of-sleep",
+   "url": "https://open-questions.ultrastable.org/#why-we-sleep-function-of-sleep",
+   "title": "why we sleep function of sleep",
+   "content_text": "The question of “why do we sleep?” has been occupying scientists for some time and a clear answer has yet to be accepted by all."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#hubble-tension-expansion-rate",
+   "url": "https://open-questions.ultrastable.org/#hubble-tension-expansion-rate",
+   "title": "Hubble tension expansion rate",
+   "content_text": "We conclude that the tension is unlikely to be resolved by any single known systematic"
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#gut-microbiome-causal-role-in-disease",
+   "url": "https://open-questions.ultrastable.org/#gut-microbiome-causal-role-in-disease",
+   "title": "gut microbiome causal role in disease",
+   "content_text": "subsequent sensitivity analyses, including colocalisation, suggested these findings were unlikely reflective of causality."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#ego-depletion-replication",
+   "url": "https://open-questions.ultrastable.org/#ego-depletion-replication",
+   "title": "ego depletion replication",
+   "content_text": "Existing evidence suggests depletion is a real phenomenon, but that its effect is likely overstated in prior literature."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#red-meat-cancer-risk",
+   "url": "https://open-questions.ultrastable.org/#red-meat-cancer-risk",
+   "title": "red meat cancer risk",
+   "content_text": "Total red meat, unprocessed red meat, and processed meat intakes were not significantly associated with risk of breast cancer when holding intake of other protein sources constant."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#vitamin-d-supplementation-outcomes",
+   "url": "https://open-questions.ultrastable.org/#vitamin-d-supplementation-outcomes",
+   "title": "What are the outcomes of vitamin D supplementation?",
+   "content_text": "In conclusion, results from published RCTs indicate that vitamin D supplementation is ineffective in improving cardiovascular health among various patient populations, including in the presence or absence of vitamin D deficiency."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#screen-time-child-development",
+   "url": "https://open-questions.ultrastable.org/#screen-time-child-development",
+   "title": "How does screen time affect child development?",
+   "content_text": "Excessive screen exposure has been associated with language delays, impaired attention, sleep disturbances, obesity, anxiety, depression, behavioral difficulties, cyberbullying exposure, and impaired social-emotional functioning."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#dark-matter-nature",
+   "url": "https://open-questions.ultrastable.org/#dark-matter-nature",
+   "title": "What is the nature of dark matter?",
+   "content_text": "It is extremely interesting that there is still no clear understanding of the nature of dark energy, as well as the extreme scarcity of information about dark matter."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#origin-of-life-abiogenesis",
+   "url": "https://open-questions.ultrastable.org/#origin-of-life-abiogenesis",
+   "title": "What is the origin of life through abiogenesis?",
+   "content_text": "Whether life is an inevitable consequence of the laws of nature or an exceptional outcome of prebiotic evolution is unresolved."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#consciousness-neural-correlates",
+   "url": "https://open-questions.ultrastable.org/#consciousness-neural-correlates",
+   "title": "What are the neural correlates of consciousness?",
+   "content_text": "By highlighting some neurobiological and computational modelling results, it will be argued that the currently available evidence favors a hierarchical processing architecture that confers a crucial, if subtle and specific, role to prefrontal cortex."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#cause-of-alzheimer-s-disease-amyloid-hypothesis",
+   "url": "https://open-questions.ultrastable.org/#cause-of-alzheimer-s-disease-amyloid-hypothesis",
+   "title": "What is the cause of Alzheimer's disease according to the amyloid hypothesis?",
+   "content_text": "Thus the clinical failure of β-amyloid-lowering agents does not mean that the hypothesis itself is incorrect; it may simply mean that manipulating β-amyloid directly is an unrealistic strategy for therapeutic intervention, given the complex role of β-amyloid in neuronal physiology."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#does-growth-mindset-intervention-work",
+   "url": "https://open-questions.ultrastable.org/#does-growth-mindset-intervention-work",
+   "title": "Does growth mindset intervention work?",
+   "content_text": "A recent large, national experiment found that a brief growth mindset intervention improved lower-achieving adolescents’ grades by 0.10 points."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#placebo-effect-mechanism",
+   "url": "https://open-questions.ultrastable.org/#placebo-effect-mechanism",
+   "title": "What is the mechanism of the placebo effect?",
+   "content_text": "Expectations are considered a key mechanism in placebo effects, yet the impact of assessing expectations on placebo responding remains unknown."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#minimum-wage-employment-effect",
+   "url": "https://open-questions.ultrastable.org/#minimum-wage-employment-effect",
+   "title": "What is the minimum wage employment effect?",
+   "content_text": "The voluminous literature on minimum wages offers little consensus on the extent to which a wage floor impacts employment."
+  },
+  {
+   "id": "https://open-questions.ultrastable.org/#antidepressant-efficacy-versus-placebo",
+   "url": "https://open-questions.ultrastable.org/#antidepressant-efficacy-versus-placebo",
+   "title": "Is antidepressant treatment more efficacious than placebo?",
+   "content_text": "In this study, bupropion XR did not demonstrate statistically significant evidence of greater improvement from"
+  }
+ ]
+}

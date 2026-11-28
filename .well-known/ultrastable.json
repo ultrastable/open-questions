@@ -1,0 +1,20 @@
+{
+ "ultrastable": 1,
+ "contract": 1,
+ "name": "Open Questions",
+ "summary": "What science honestly does not know yet: the big open questions, where the evidence leans today, and how that lean has moved.",
+ "url": "https://open-questions.ultrastable.org",
+ "repo": "https://github.com/ultrastable/open-questions",
+ "license": "LicenseRef-Ultrastable-USL-1.0",
+ "discoverable": true,
+ "platform": "https://ultrastable.io",
+ "directory": "https://ultrastable.io/directory",
+ "surfaces": {
+  "home": "/",
+  "manifest": "/.well-known/ultrastable.json",
+  "claims": "/claims.json",
+  "health": "/health",
+  "social": "/social-queue.json",
+  "graph": "/api/graph"
+ }
+}

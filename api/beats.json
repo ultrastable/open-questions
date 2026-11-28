@@ -1,0 +1,11 @@
+{
+ "every_hours": 168,
+ "count": 1,
+ "beats": [
+  {
+   "at": "2026-11-28T06:17:23.656Z",
+   "entries": 20,
+   "note": "entries seen; the source re-read step is not built yet"
+  }
+ ]
+}
