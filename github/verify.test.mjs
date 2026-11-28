@@ -18,9 +18,14 @@ test("a quote that is not in the abstract, or an unknown DOI, is refused", () =>
   assert.equal(verify({ doi: "10.9/none", quote: "x", rate: "1" }, src, "t").ok, false);
 });
 
-import { plan } from "./loop.mjs";
+import { plan, attemptOf } from "./loop.mjs";
 test("each retry searches a different window and phrasing", () => {
   const a = plan(0), b = plan(1);
   assert.notEqual(a.offset, b.offset);
   assert.notEqual(a.phrase, b.phrase);
+});
+test("an existing queue issue never repeats the first attempt", () => {
+  assert.equal(attemptOf(undefined), 0);
+  assert.equal(attemptOf({ comments: 0 }), 1);
+  assert.notEqual(plan(attemptOf({ comments: 0 })).offset, plan(0).offset);
 });
