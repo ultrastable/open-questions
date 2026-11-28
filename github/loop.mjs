@@ -19,7 +19,8 @@ const say = (...a) => { const l = a.join(" "); log.push(l); console.log(l); };
 
 // A retry used to fetch the same six top hits for a temperature-0 model, so a topic that failed once failed forever. Each attempt now
 // searches a different window (offset) and phrasing (core lesson: a retry that repeats its input cannot converge).
-const PHRASES = [" rate", " proportion of cases percent", " prevalence percentage", " incidence systematic review", " probability meta-analysis"];
+const PAGE = 6, MAX_ATTEMPTS = Number(process.env.MAX_ATTEMPTS || 6);
+const PHRASES = [" review", " systematic review", " meta-analysis", " evidence consensus", " unresolved"];
 export const plan = attempt => ({ rows: 10, offset: attempt * 10, phrase: PHRASES[attempt % PHRASES.length] });
 // An issue exists only because an attempt already failed (its first note is in the body), so its next attempt is comments + 1.
 export const attemptOf = issue => (issue ? issue.comments + 1 : 0);
@@ -43,20 +44,22 @@ async function chat(prompt) {
     { name: "huggingface", url: "https://router.huggingface.co/v1/chat/completions", key: process.env.HF_TOKEN || "", model: process.env.HF_MODEL || "meta-llama/Llama-3.1-8B-Instruct" },
   ];
   let last = "";
+  const failed = [];
   for (const r0 of routes) {
     // Pollinations allows one free reply per 45 s per IP; wait out the gap instead of losing the try.
     if (r0.name === "pollinations" && lastPoll && Date.now() - lastPoll < 46000) await new Promise(ok => setTimeout(ok, 46000 - (Date.now() - lastPoll)));
     if (r0.name === "pollinations") lastPoll = Date.now();
-    if (!r0.key) { say("route", r0.name, "skipped: no token"); continue; }
+    if (!r0.key) { say("route", r0.name, "skipped: no token"); failed.push(r0.name + " skipped (no token)"); continue; }
     const r = await fetch(r0.url, { method: "POST", headers: { ...(r0.key === "none" ? {} : { authorization: "Bearer " + r0.key }), "content-type": "application/json", accept: "application/vnd.github+json", "x-github-api-version": "2022-11-28", "user-agent": UA },
       body: JSON.stringify({ model: r0.model, temperature: 0, max_tokens: 400, messages: [{ role: "system", content: "You extract facts from study abstracts. Reply with one JSON object and nothing else." }, { role: "user", content: prompt }] }) });
     say("route", r0.name, r.status, ["x-ratelimit-remaining-requests", "x-ratelimit-remaining-tokens"].map(h => h + "=" + r.headers.get(h)).join(" "));
-    if (!r.ok) { last = r0.name + " " + r.status + ": " + (await r.text()).slice(0, 160); continue; }
+    if (!r.ok) { last = r0.name + " " + r.status + ": " + (await r.text()).slice(0, 160); failed.push(last); continue; }
     const raw = await r.text();
-    let j; try { j = JSON.parse(raw); } catch { last = r0.name + " answered 200 with non-JSON: " + JSON.stringify(raw.slice(0, 80)); say(last); continue; }
-    const txt = j.choices[0].message.content || "{}";
+    let j; try { j = JSON.parse(raw); } catch { last = r0.name + " answered 200 with non-JSON: " + JSON.stringify(raw.slice(0, 80)); say(last); failed.push(last); continue; }
+    const txt = j.choices?.[0]?.message?.content || "{}";
     say("reply", JSON.stringify(txt.slice(0, 200)));
-    return { answer: JSON.parse(txt.slice(txt.indexOf("{"), txt.lastIndexOf("}") + 1) || "{}"), route: r0.name, usage: j.usage };
+    let answer; try { answer = JSON.parse(txt.slice(txt.indexOf("{"), txt.lastIndexOf("}") + 1) || "{}"); } catch { last = r0.name + " reply was not JSON"; failed.push(last); continue; }
+    return { answer, route: r0.name, usage: j.usage, failed };
   }
   throw new Error("no model route answered: " + last);
 }
@@ -73,18 +76,19 @@ export async function run() {
   const entries = JSON.parse(readFileSync("data/entries.json", "utf8"));
   const done = new Set(entries.map(e => e.id));
   const open = await gh(`/repos/${REPO}/issues?state=open&labels=queue&per_page=100&sort=updated&direction=asc`);
+  const shelved = new Set((await gh(`/repos/${REPO}/issues?state=closed&labels=queue&per_page=100`)).filter(i => i.state_reason === "not_planned").map(i => i.title.replace(title(""), "")));
   const byTopic = new Map(open.map(i => [i.title.replace(title(""), ""), i]));
   // queue order: topics never tried, then open queue issues, least recently tried first
-  const order = [...topics.filter(t => !done.has(slug(t)) && !byTopic.has(t)), ...open.map(i => i.title.replace(title(""), "")).filter(t => topics.includes(t) && !done.has(slug(t)))];
+  const order = [...topics.filter(t => !done.has(slug(t)) && !byTopic.has(t) && !shelved.has(t)), ...open.map(i => i.title.replace(title(""), "")).filter(t => topics.includes(t) && !done.has(slug(t)))];
   say("queue", order.length, "open issues", open.length, "published", entries.length);
   let added = 0;
   for (const topic of order.slice(0, TRIES)) {
-    let outcome;
-    const issue = byTopic.get(topic);
+    let outcome, route = "";
+    const issue = byTopic.get(topic), attempt = attemptOf(issue);
     try {
-      const srcs = await sources(topic, attemptOf(issue));
+      const srcs = await sources(topic, attempt);
       if (!srcs.length) outcome = { ok: false, why: ["Crossref returned no abstract for this query"] };
-      else { const d = await draft(topic, srcs); outcome = d.answer?.doi ? verify(d.answer, srcs, topic) : { ok: false, why: ["the model found no stated base rate in " + srcs.length + " abstracts"] }; }
+      else { const d = await draft(topic, srcs); route = d.route + (d.failed.length ? " (earlier routes failed: " + d.failed.map(f => f.slice(0, 60)).join(" | ") + ")" : ""); outcome = d.answer?.doi ? verify(d.answer, srcs, topic) : { ok: false, why: ["no abstract on page " + (attempt + 1) + " (" + srcs.length + " read) stated where the evidence leans"] }; }
     } catch (e) { outcome = { ok: false, why: [String(e.message || e)] }; }
     if (outcome.ok) {
       entries.push(outcome.entry); added++; say("kept", topic, "->", outcome.entry.rate);
@@ -92,8 +96,11 @@ export async function run() {
         await gh(`/repos/${REPO}/issues/${issue.number}`, { method: "PATCH", body: JSON.stringify({ state: "closed", state_reason: "completed" }) }); }
     } else {
       say("not yet", topic, ":", outcome.why.join("; "));
-      const body = "Tried " + new Date().toISOString().slice(0, 10) + ": " + outcome.why.join("; ") + ". The loop tries again on a later run.";
-      if (issue) await gh(`/repos/${REPO}/issues/${issue.number}/comments`, { method: "POST", body: JSON.stringify({ body }) });
+      const spent = attempt + 1 >= MAX_ATTEMPTS;  // ATTEMPTS-CAP-1: a queue item ends with a disposition, it never idles open forever
+      const body = "Tried " + new Date().toISOString().slice(0, 10) + " (attempt " + (attempt + 1) + "/" + MAX_ATTEMPTS + (route ? ", answered by " + route : "") + "): " + outcome.why.join("; ") +
+        (spent ? ". Cap reached: closed as not planned, no source stated a lean. Reopen to retry." : ". The next run reads the next page of sources.");
+      if (issue) { await gh(`/repos/${REPO}/issues/${issue.number}/comments`, { method: "POST", body: JSON.stringify({ body }) });
+        if (spent) await gh(`/repos/${REPO}/issues/${issue.number}`, { method: "PATCH", body: JSON.stringify({ state: "closed", state_reason: "not_planned" }) }); }
       else await gh(`/repos/${REPO}/issues`, { method: "POST", body: JSON.stringify({ title: title(topic), labels: ["queue"], body: "Owner: the Open Questions loop (`.github/workflows/loop.yml`). Done when a verified entry for this reference class is in `data/entries.json` (closing probe: `github/verify.mjs`).\n\n" + body }) });
     }
   }
