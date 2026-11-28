@@ -264,5 +264,19 @@
    }
   ],
   "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "antidepressant-efficacy-versus-placebo",
+  "title": "Is antidepressant treatment more efficacious than placebo?",
+  "lean": "No statistically significant evidence of greater improvement.",
+  "summary": "In this study, bupropion XR did not demonstrate statistically significant evidence of greater improvement from",
+  "sources": [
+   {
+    "title": "Double-blind, placebo-controlled comparison of the antidepressant efficacy and tolerability of bupropion XR and venlafaxine XR",
+    "year": 2009,
+    "doi": "10.1177/0269881109106953"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
  }
 ]
