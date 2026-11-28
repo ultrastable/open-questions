@@ -21,6 +21,8 @@ const say = (...a) => { const l = a.join(" "); log.push(l); console.log(l); };
 // searches a different window (offset) and phrasing (core lesson: a retry that repeats its input cannot converge).
 const PHRASES = [" rate", " proportion of cases percent", " prevalence percentage", " incidence systematic review", " probability meta-analysis"];
 export const plan = attempt => ({ rows: 10, offset: attempt * 10, phrase: PHRASES[attempt % PHRASES.length] });
+// An issue exists only because an attempt already failed (its first note is in the body), so its next attempt is comments + 1.
+export const attemptOf = issue => (issue ? issue.comments + 1 : 0);
 async function sources(topic, attempt = 0) {
   const p = plan(attempt);
   const u = `https://api.crossref.org/works?rows=${p.rows}&offset=${p.offset}&filter=has-abstract:true&select=DOI,title,abstract,issued&query=` + encodeURIComponent(topic + p.phrase);
@@ -80,7 +82,7 @@ export async function run() {
     let outcome;
     const issue = byTopic.get(topic);
     try {
-      const srcs = await sources(topic, issue ? issue.comments : 0);
+      const srcs = await sources(topic, attemptOf(issue));
       if (!srcs.length) outcome = { ok: false, why: ["Crossref returned no abstract for this query"] };
       else { const d = await draft(topic, srcs); outcome = d.answer?.doi ? verify(d.answer, srcs, topic) : { ok: false, why: ["the model found no stated base rate in " + srcs.length + " abstracts"] }; }
     } catch (e) { outcome = { ok: false, why: [String(e.message || e)] }; }
