@@ -236,5 +236,33 @@
    }
   ],
   "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "placebo-effect-mechanism",
+  "title": "What is the mechanism of the placebo effect?",
+  "lean": "Leans toward expectations as a key mechanism; whether assessing them affects placebo responding remains unknown.",
+  "summary": "Expectations are considered a key mechanism in placebo effects, yet the impact of assessing expectations on placebo responding remains unknown.",
+  "sources": [
+   {
+    "title": "To Ask or Not to Ask: Does Inquiring About Participants' Expectations Influence the Placebo Effect? A Placebo Mechanism Study in Healthy Volunteers",
+    "year": 2026,
+    "doi": "10.1002/ejp.70384"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
+ },
+ {
+  "id": "minimum-wage-employment-effect",
+  "title": "What is the minimum wage employment effect?",
+  "lean": "No consensus on the extent of the employment effect.",
+  "summary": "The voluminous literature on minimum wages offers little consensus on the extent to which a wage floor impacts employment.",
+  "sources": [
+   {
+    "title": "Effects of the Minimum Wage on Employment Dynamics",
+    "year": 2015,
+    "doi": "10.2139/ssrn.2654355"
+   }
+  ],
+  "grade": "lean quoted from the source abstract; study design not yet graded"
  }
 ]

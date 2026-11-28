@@ -22,6 +22,8 @@ const say = (...a) => { const l = a.join(" "); log.push(l); console.log(l); };
 const PAGE = 6, MAX_ATTEMPTS = Number(process.env.MAX_ATTEMPTS || 6);
 const PHRASES = [" review", " systematic review", " meta-analysis", " evidence consensus", " unresolved"];
 export const plan = attempt => ({ rows: 10, offset: attempt * 10, phrase: PHRASES[attempt % PHRASES.length] });
+// An issue exists only because an attempt already failed (its first note is in the body), so its next attempt is comments + 1.
+export const attemptOf = issue => (issue ? issue.comments + 1 : 0);
 async function sources(topic, attempt = 0) {
   const p = plan(attempt);
   const u = `https://api.crossref.org/works?rows=${p.rows}&offset=${p.offset}&filter=has-abstract:true&select=DOI,title,abstract,issued&query=` + encodeURIComponent(topic + p.phrase);
@@ -68,7 +70,6 @@ async function draft(topic, srcs) {
   return chat(prompt);
 }
 
-const attemptsOf = async issue => 1 + (issue ? (await gh(`/repos/${REPO}/issues/${issue.number}`)).comments : 0);
 const title = t => "Find where the evidence leans: " + t;
 export async function run() {
   const topics = JSON.parse(readFileSync("data/topics.json", "utf8")).topics;
@@ -83,7 +84,7 @@ export async function run() {
   let added = 0;
   for (const topic of order.slice(0, TRIES)) {
     let outcome, route = "";
-    const issue = byTopic.get(topic), attempt = Math.max(0, (await attemptsOf(issue)) - 1);
+    const issue = byTopic.get(topic), attempt = attemptOf(issue);
     try {
       const srcs = await sources(topic, attempt);
       if (!srcs.length) outcome = { ok: false, why: ["Crossref returned no abstract for this query"] };
