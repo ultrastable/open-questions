@@ -25,8 +25,8 @@ test("retries page through sources; the cap closes the issue as not planned", as
     return json({});
   };
   try { await run(); } finally { globalThis.fetch = real; }
-  assert.ok(calls.some(c => c[1].includes("offset=6")), "second attempt reads page 2 of Crossref");
-  assert.ok(!calls.some(c => c[1].includes("rate")), "the query no longer carries the word rate");
+  assert.ok(calls.some(c => c[1].includes("offset=10")), "second attempt reads page 2 of Crossref");
+  assert.ok(calls.some(c => c[1].includes("crossref") && c[1].includes("%20review")), "the query asks for reviews");
   const patch = calls.find(c => c[0] === "PATCH");
   assert.match(patch[2], /not_planned/);
   const comment = calls.find(c => c[1].endsWith("/issues/7/comments"));
